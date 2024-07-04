@@ -1,0 +1,9 @@
+EXCEL_FILE_SUCCESSFUL_MESSAGE = "Excel file read successfully"
+PAGE_SIZE = 'page_size'
+PAGE_NUMBER = 'page_number'
+SORT_TYPE = 'sort'
+SORT_DIRECTION = 'sort_direction'
+FILTER_TYPE = 'type'
+FILTER_SEARCH = 'search'
+ASCENDING = 'asc'
+ERROR_MSG = {"error": "Failed to read Excel file"}
