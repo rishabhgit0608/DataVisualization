@@ -9,8 +9,20 @@ route = Blueprint("route", __name__)
 csrf.exempt(route)
 @route.route("/processdata", methods=["GET"])
 
-
 def get_data():
+    """_summary_
+        This method is a route for fetching excel data and processing it.
+        Request Params
+            - page_size
+            - page_number
+            - sort_type
+            - sort_direction
+            - filter_type
+            - filter_search
+
+    Returns:
+        Paginated Data from excel
+    """    
     page_size = int(request.args.get(PAGE_SIZE, 10))
     page_number = int(request.args.get(PAGE_NUMBER, 1))
     sort_type = request.args.get(SORT_TYPE, None)
