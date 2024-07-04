@@ -2,10 +2,11 @@ import { useNavigate } from "react-router-dom";
 import { GoogleLogin } from "react-google-login";
 import "./App.css";
 
-const LoginPage = () => {
+const LoginPage = ({ setIsLoggedIn }) => {
   const navigate = useNavigate();
 
   const responseGoogle = () => {
+    setIsLoggedIn(true);
     navigate("/app");
   };
 
