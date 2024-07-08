@@ -4,3 +4,5 @@ flask-cors
 pandas
 numpy
 python-dotenv
+openpyxl
+xlrd
