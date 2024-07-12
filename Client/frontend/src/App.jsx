@@ -6,6 +6,7 @@ import "./App.css";
 import { HeaderComponent } from "./Components/HeaderComponent/HeaderComponent";
 import { TableComponent } from "./Components/TableComponent/TableComponent";
 import TableFooter from "./Components/TableComponent/TableFooter";
+import Loader from "./Components/Loader/Loader";
 function App() {
   const [data, setData] = useState([]);
   const [pageNumber, setPageNumber] = useState(1);
@@ -64,13 +65,6 @@ function App() {
     setPageNumber(1);
   };
 
-  const Loader = () => (
-    <div className="d-flex justify-content-center my-3">
-      <div className="spinner-border" role="status">
-        <span className="visually-hidden">Loading...</span>
-      </div>
-    </div>
-  );
   return (
     <div className="container mt-5">
       <HeaderComponent
