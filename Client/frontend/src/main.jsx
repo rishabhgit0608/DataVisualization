@@ -1,6 +1,6 @@
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import LoginPage from "./LoginPage";
+import LoginPage from "../src/Components/LoginComponent/LoginPage";
 import App from "./App";
 import React, { useState, useEffect } from "react";
 
